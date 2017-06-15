@@ -1,0 +1,208 @@
+/*
+Project Name: Relaxr landing page
+Client: relaxr
+Author: Evelyn Duffy
+Developer @GA in DC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/*What is this?*/
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/*Not sure what this applies to?*/
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: white;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+     background: url(../img/header_bg.jpg) no-repeat center top rgb(134,141,157);
+      background-size: cover;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  margin: auto;
+  width: 991px;
+}
+
+#header {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#footer {
+  width: 100%;
+  margin: auto;
+  background-color: #121212;
+/*I can't seem to get the footer to center - I've had to center each part individually below (and they're off-center).*/
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*IDs as they appear in the HTML*/
+
+#benefits {
+  color: black;
+  background-color: #f0efef;
+  width: 100%;
+  padding: 50px;
+}
+
+#testimonial {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  padding: 35px;
+}
+
+#signup {
+  background-color: #f9e42e;
+  padding: 15px;
+}
+
+/*Classes as they appear in the HTML*/
+
+.relaxr {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.singletap {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 65px 0;
+}
+
+.getitbutton {
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  padding: 15px 20px 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: #f9e42e;
+}
+
+.benefits {
+  font-weight: 600;
+  font-size: 20px;
+  color: #033048;
+}
+
+.benefitlist {
+  font-weight: 400;
+  font-size: 13px;
+  color: #606161;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.amanda {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.signupbutton {
+  font-weight: 800;
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  padding: 15px 20px 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #033048;
+}
+
+
+.kicker {
+  font-weight: 800;
+  font-size: 24px;
+  color: #f9e42e;
+  text-align: center;
+}
+
+ul.social {
+  text-align: center;
+  list-style-type: none;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+.copyright {
+  text-size: 9px;
+  text-weight: 600;
+  text-align: center;
+}
+
+/*
+Questions:
+
+I'm not sure how to keep the background picture contained (i.e., not cover the whole page). In the example the
+sailboat is a lot higher.
+
+I'm not sure how to handle the font weights with the Google font - typing in "semibold" etc doesn't
+seem to have had any effect. I Googled this a bit but mostly found other confused people
+on stack overflow, etc. Based on this I went with the number values I've used here, but
+it looked like it was supposed to be more intuitive.
+
+I tried the more advanced site and wasn't able to get the blue boxes.
+
+*/

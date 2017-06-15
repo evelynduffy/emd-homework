@@ -1,0 +1,164 @@
+body {
+      background: linen;
+      font-family: serif;
+
+}
+
+a:hover, a:visited, a:link, a:active {
+    
+    color: black;
+}
+
+/*This part of the stylesheet generally covers the About Me (index) page: */
+
+table {
+  margin: auto;
+}
+
+h1.aboutme {
+  margin: auto;
+  text-align: center;
+}
+
+td.aboutme {
+  border-right: 1px dotted gray;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+/*I tried to use the same list formatting as I did for the social media links,
+but it didn't work. This was an on-the-fly fix. What's a better way?*/
+
+li.header {
+  display: inline;
+}
+
+div.joe {
+    text-align: justify;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+img.evelyn {
+  width: 300px;
+  height: 200px;
+}
+
+div.evelyn {
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 15px;
+}
+
+h3.headline {
+  letter-spacing: 3px;
+  margin-left: 5px;
+}
+
+p::first-letter {
+  font-size: xx-large;
+}
+
+div.social {
+  margin: auto;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+ul.social {
+  list-style-type: none;
+  background-color: linen;
+  margin-left: 350px;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+
+/*What's a better way to try to center this than setting such a big margin?*/
+
+}
+
+li.social {
+float: left;
+/*I found instructions/examples for using float at https://www.w3schools.com/css/css_float.asp
+I had fun playing with it but I don't really follow why it works like it does.
+(i.e., I wanted to use it for the paragraph/photo but couldn't work it out.)*/
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+li a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/*This part of the stylesheet generally covers the Portfolio page: */
+
+.content {
+    max-width: 960px;
+    margin: auto;
+}
+
+span#awesome {
+font-style: italic;
+font-weight: bold;
+}
+
+ol {list-style-type: decimal-leading-zero;
+  line-height: 2;
+}
+
+ul.resume {list-style-type: none;
+  line-height: 2;
+}
+
+.justhavingfun {
+  position: fixed;
+  color: hotpink;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+    border: 1px dashed green;
+    cursor: crosshair;
+/*I was trying to figure out how to give the social media links this same effect (for something practical), but I couldn't get it.*/
+}
+
+a.justhavingfun {
+  text-decoration: underline;
+}
+
+/* For my reference: classes used on the About Me page:
+header
+headline
+social
+joe
+evelyn
+aboutme*/
+
+/* IDs used on the About Me page: None */
+
+/*Classes used on the Portfolio page:
+content
+aboutme
+resume
+social
+justhavingfun*/
+
+/*IDs used on the Portfolio page:
+awesome
+*/
+
+/* Observations: I'm still struggling with the semantic elements and how to align them on the page.
+We didn't go over this at all in my intro HTML & CSS Saturday class and the tutorials I took this weekend on W3 School were helpful
+but didn't didn't completely clarify. (I'm still working through Dash - it's a lot less intuitive for me than the W3 School.)
+The resulting pages seem pretty clunky and I'm sure there are far more elegant solutions.
+*/
