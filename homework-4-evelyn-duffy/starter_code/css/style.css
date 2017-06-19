@@ -1,0 +1,273 @@
+/*
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Evelyn Duffy
+Developer @GA in DC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+ align-items: center;
+ background-color: #f0efef;
+ display: flex;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 12px;
+ justify-content: center;
+ line-height: 1.4;
+ width: 100%;
+}
+
+main {
+  max-width: 1050px;
+}
+
+ul {
+ list-style-type: none;
+}
+
+a {
+  color:inherit;
+}
+
+a:hover {
+ background-color: blue;
+ cursor: crosshair;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  Align-items: flex-start;
+  background-color: #033048;
+  Display: flex;
+  height: 75px;
+  Justify-content: space-between;
+  width: 100%;
+}
+
+.relaxr-logo-1 {
+  color: white;
+  font-size: 30px;
+}
+
+.relaxr-nav-menu {
+  Align-items: center;
+  color: #f9e42e;
+  Display: flex;
+  font-weight: 600;
+  font-size: 24px;
+  height: 100px;
+  Justify-content: space-around;
+  margin-bottom: 100px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.relaxr-columns {
+ Align-items: center;
+ background-color: #f0efef;
+ border-top: 100px;
+ Display: flex;
+ flex-wrap: wrap;
+ height: 900px;
+ justify-content: center;
+}
+
+.relaxr-left {
+  height: 100%;
+  margin-right: 20px;
+  width: 700px;
+}
+
+.relaxr-right {
+  width: 240px;
+  color: #033048;
+  height: 100%;
+}
+
+.relaxr-blog-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+.relaxr-big-letter {
+  color: #606161;
+  float: left;
+  font-size: 75px;
+}
+
+.relaxr-rowing-image {
+  background-image: url("../images/blog_photo1.jpg");
+  height: 250px;
+  width: 100%;
+}
+
+.relaxr-boats-image{
+  background-image: url("../images/blog_photo2.jpg");
+  height: 250px;
+  width: 100%;
+}
+
+
+.relaxr-sidebar-header {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.relaxr-sidebar-text {
+  font-weight: 300;
+}
+
+.relaxr-list-text {
+  font-size: 24px;
+}
+
+.relaxr-about-text, .relaxr-learn-more {
+  font-size: 22px;
+}
+
+.relaxr-learn-more, .relaxr-read-more {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.relaxr-read-more {
+float: right;
+}
+
+.relaxr-blog-1:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+.relaxr-blog-2:after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+.relaxr-ad-unit {
+  height: 250px;
+  overflow: hidden;
+}
+
+.relaxr-signup {
+  Align-items: center;
+  background-color: #f9e42e;
+  Display: flex;
+  height: 75px;
+  Justify-content: center;
+  margin-top: 375px;
+  width: 100%;
+}
+
+.relaxr-button {
+  Align-items: center;
+  background-color: #033048;
+  color: white;
+  Display: flex;
+  font-weight: 800;
+  height: 50px;
+  Justify-content: center;
+  width: 200px;
+}
+
+footer {
+  Align-items: center;
+  background-color: #121212;
+  color: white;
+  Display: flex;
+  flex-direction: column;
+  height: 200px;
+  Justify-content: center;
+  width: 100%;
+}
+
+
+.relaxr-logo-2 {
+  color: yellow;
+  font-size: 30px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*Functioning float for the two columns - saving code in case flexbox doesn't work
+
+.relaxr-columns {
+  border: 1px solid purple;
+  height: 900px;
+  background-color: lightgray;
+  The light gray provided in the .txt file was too dark
+}
+
+.relaxr-left {
+  border: 1px solid blue;
+  float: left;
+  width: 700px;
+  height: 100%;
+}
+
+.relaxr-right {
+  float: left;
+  border: 1px solid red;
+  width: 240px;
+  height: 100%;
+}
+
+.relaxr-columns:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+*/
+
+
+/*
+Saving for later reference:
+.relaxr-right {
+  display: none;
+}
+
+@media (mid-width: 600px) {
+  .relaxr-right {
+    display:block;
+  }
+}*/
